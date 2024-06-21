@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Karyawan</title>
+    <link rel="stylesheet" href="gaya.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url("2.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+           
+        }
+
+        .form {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #294B29;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form input[type="text"], .form input[type="password"] {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .form input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form input:focus {
+            outline: none;
+            border: 1px solid #294B29;
+        }
+
+        .btnn {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: #294B29;
+            font-weight: bold;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btnn:hover {
+            background: #fff;
+            color: #294B29;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                padding: 15px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+
+            .form {
+                padding: 20px;
+            }
+
+            .form h2 {
+                font-size: 20px;
+            }
+        }
+
+    
+
+            .form {
+                width: 90%;
+            }
+
+            .form input, .btnn {
+                width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>Selamat Datang di <br><span>Website</span> <br>Bantu Manten</h1>
+            <div class="form">
+                <form action="login.php" method="POST">
+                    <h2>Login Here</h2>
+                    <input type="text" name="username" placeholder="Enter Username Here">
+                    <input type="password" name="password" placeholder="Enter Password Here">
+                    <button type="submit" class="btnn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
